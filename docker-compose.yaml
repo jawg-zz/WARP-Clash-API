@@ -3,9 +3,9 @@ services:
   warp-clash:
     build: .
     ports:
-      - "21001:3000"
+      - ":3000"
     env_file:
-      - .env.local
+      - .env
     volumes:
       - ./config:/app/config
       - ./account:/app/account
